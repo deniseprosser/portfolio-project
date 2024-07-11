@@ -4,16 +4,21 @@
   --secondary-text-color: #272142;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
 }
 
 p,
-h2,
 a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 64px;
 }
 
 .hero {
@@ -30,6 +35,8 @@ a {
   font-size: 24px;
   line-height: 2;
   color: var(--secondary-text-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .btn-block {
@@ -39,4 +46,46 @@ a {
   background: var(--primary-color);
   border-radius: 4px;
   padding: 18px 30px;
+}
+
+.btn-outline {
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 18px 30px;
+}
+
+.project-details p {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  line-height: 30px;
+}
+
+.project-details {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .project-details {
+    padding: 0;
+    text-align: center;
+  }
+
+  .project-details h2 {
+    font-size: 36px;
+  }
 }
