@@ -30,6 +30,18 @@
     <title>Denise Prosser | About Me</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <p class="d-none d-md-block"><a href="/">Denise Prosser</a></p>
+        <p class="d-block d-md-none"><a href="/">DP</a></p>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html" class="active">About</a></li>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
@@ -40,13 +52,60 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a href="#" class="btn-block">View my Projects</a>
+            <a href="/work.html" class="btn-block">View my Projects</a>
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="images/me.jpg" alt="" class="img-fluid rounded" />
+          <img
+            src="images/me.jpg"
+            alt="Denise Prosser"
+            class="img-fluid rounded"
+          />
         </div>
       </div>
     </div>
+    <footer>
+      <div
+        class="contact-container mb-5 d-flex justify-content-between d-none d-md-flex container"
+      >
+        <div>
+          <h4>Work Inquiry</h4>
+          <p class="text-muted">Let's work together</p>
+        </div>
+        <div class="mt-4 me-5">
+          <a href="/contact.html" class="btn-block">Contact me</a>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-5">
+        <a href="mailto:denise.prosser23@gmail.com" class="email-link"
+          >denise.prosser23@gmail.com</a
+        >
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="https://github.com/deniseprosser"
+          target="_blank"
+          title="GitHub"
+          ><i class="fa-brands fa-github"></i></a
+        ><a
+          href="https://www.linkedin.com/in/denise-prosser-b486222ab"
+          target="_blank"
+          title="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="text-center mt-5">
+        This project is open-sourced on
+        <a
+          href="https://github.com/deniseprosser/portfolio-project"
+          target="_blank"
+          class="footer-gh"
+          >Github</a
+        >
+        <br />
+        ✌
+      </p>
+    </footer>
   </body>
 </html>
