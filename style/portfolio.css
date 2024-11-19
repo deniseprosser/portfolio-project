@@ -1,12 +1,13 @@
 :root {
-  --primary-color: #1c7293;
-  --secondary-color: #e1f6f4;
+  --primary-color: #113f67;
+  --secondary-color: #e7eaf6;
   --secondary-text-color: #272142;
 }
 
 h1,
 h2,
-h4 {
+h4,
+h5 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
 }
@@ -16,15 +17,21 @@ a,
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h2 {
   font-size: 64px;
 }
 
-h4 {
+h4,
+h5 {
   font-size: 48px;
+}
+
+h5 {
+  border-left: 10px solid var(--primary-color);
+  padding-left: 10px;
 }
 
 nav {
@@ -126,15 +133,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.transform-img {
-  transition: all 200ms ease-in-out;
-}
-
-.transform-img:hover {
-  transform: scale(1.1);
-  filter: contrast(60%);
-}
-
 .btn-block {
   text-decoration: none;
   color: white;
@@ -151,6 +149,10 @@ nav a:hover {
   font-size: 16px;
   border-radius: 4px;
   padding: 18px 30px;
+}
+
+.skills-icons p {
+  font-size: 16px;
 }
 
 .project-details p {
@@ -230,6 +232,11 @@ footer .social-links a:hover {
   .content h1 {
     font-size: 48px;
     line-height: 1.5;
+  }
+
+  .skills-icons div {
+    flex-basis: 50%;
+    max-width: 50%;
   }
 
   .project-details h2 {
