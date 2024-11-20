@@ -151,18 +151,37 @@ nav a:hover {
   padding: 18px 30px;
 }
 
+.project-link {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 18px 30px;
+}
+
+.left-border {
+  border-left: 10px solid var(--primary-color);
+  padding-left: 10px;
+}
+
 .skills-icons p {
   font-size: 16px;
 }
 
-.project-details p {
-  font-size: 16px;
-  color: var(--secondary-text-color);
-  line-height: 30px;
+.project-examples p {
+  font-size: 18px;
 }
 
-.project-details {
-  padding: 120px 60px;
+.project-examples h3 {
+  font-size: 24px;
+}
+
+.project-preview {
+  border-radius: 6px;
+  max-height: 242px;
 }
 
 footer {
@@ -223,7 +242,7 @@ footer .social-links a:hover {
     padding: 80px 20px;
   }
 
-  .project-details,
+  .project-examples,
   .content-container {
     padding: 0 15px;
     text-align: center;
@@ -239,8 +258,18 @@ footer .social-links a:hover {
     max-width: 50%;
   }
 
-  .project-details h2 {
-    font-size: 36px;
+  .project-examples h3 {
+    font-size: 20px;
+  }
+
+  .project-examples p {
+    display: none;
+  }
+
+  .btn-outline {
+    font-size: 8px;
+    padding: 4px 8px;
+    text-align: center;
   }
 
   nav p {
